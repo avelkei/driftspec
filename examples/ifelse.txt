@@ -1,0 +1,10 @@
+fn even(x: Int) {
+    if x % 2 == 0 {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+printf("%d\n", even(100));
+printf("%d\n", even(101));

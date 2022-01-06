@@ -1,0 +1,11 @@
+fn double(x: Int) {
+    return 2 * x
+}
+
+fn even(x: Int) {
+    return x % 2 == 0
+}
+
+printf("%d\n", double(100))
+printf("%d\n", even(100))
+printf("%d\n", even(101))

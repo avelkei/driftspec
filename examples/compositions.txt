@@ -1,0 +1,16 @@
+fn double(x: Int) {
+    return 2 * x
+}
+
+// Compositions used as statements are evaluated once as a series of statements
+// The underscore identifier serves as a placeholder for the value
+// received from the previous composition command
+
+double(10) | double | double | printf("%d\n", _)
+// Output:
+// 80
+
+// Compositions used as expressions and assigned to something are treated as functions
+
+// multiplyBy4 = double | double
+// printf("%d\n", multiplyBy4(25))

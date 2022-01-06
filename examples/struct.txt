@@ -1,0 +1,9 @@
+struct Point {
+    x: Int,
+    y: Int
+}
+
+p = Point(3, 5)
+
+printf("p.x = %d\n", p.x)
+printf("p.y = %d\n", p.y)
